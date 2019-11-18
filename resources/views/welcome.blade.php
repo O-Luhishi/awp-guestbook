@@ -9,6 +9,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <link rel="icon" type="image/png" href="{{ asset ('images/favicon.ico') }}" />
+
         <!-- Styles -->
         <style>
             html, body {

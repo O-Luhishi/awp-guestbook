@@ -12,10 +12,11 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $comments = Comment::all ();
-        return view ('index', compact ('comments'));
+    const COMMENTS_PER_PAGE = 5;
+
+    public function index () {
+        $comments = Comment::paginate (self::COMMENTS_PER_PAGE);
+        return view ('index') -> with (['comments' => $comments]);
     }
 
     /**
@@ -47,7 +48,7 @@ class CommentController extends Controller
      */
     public function show(Comment $comment)
     {
-        //
+        return view ('comments.show', compact ('comment'));
     }
 
     /**

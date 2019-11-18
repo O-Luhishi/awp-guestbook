@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get ('comments', 'CommentController@index');
+
+Route::get ('/comment/{comment}/like/', 'LikesController@upVote');
+Route::get ('/comment/{comment}/dislike/', 'LikesController@downVote');
+Route::get ('/comment/{comment}/', 'CommentController@show');

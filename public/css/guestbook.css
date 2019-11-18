@@ -1,0 +1,27 @@
+/* General Layout */
+
+.main-table {
+    margin-top: 4em;
+}
+
+/* Main Table */
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Pagination Links */
+
+ul.pagination {
+    font-size: 125%;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li:hover {
+    text-decoration: underline;
+}
